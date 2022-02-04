@@ -32,13 +32,26 @@
         </div>
     </header>
     <main>
+
         <section class="hero">
             <div class="container">
-            <h1 class="hero-slogan">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-btn">Заказать услугу</button>   
-            </div>       
-        </section>
-            
+                <h1 class="hero-slogan">Эффективные решения для вашего бизнеса</h1>
+                
+                <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
+                        <div class="backdrop is-hidden" data-modal>
+                            <div class="modal">
+                                <p>
+                                
+                                </p>
+                                <button type="button" class="close-modal" data-modal-close>
+                                    <svg class="close-modal-icon" width="11" height="11">
+                                    <use href="./images/icons.svg#icon-close-modal"></use>
+                                </svg></button>
+                            </div>
+                        </div> 
+            </div>
+        </section>    
+
         <section class="section">
             <div class="container">
             <h2 class="visually-hidden">Наши преимущества</h2>
@@ -82,16 +95,27 @@
             </ul>
             </div>
         </section>
+
         <section class="section about-tasks">
             <div class="container ">
             <h2 class="title title-about-tasks">Чем мы занимаемся</h2>
             <ul class="about-tasks-list">
-                <li class="about-tasks-item"><img src="./images/box-1.jpg" alt="creating products" width="370" height="294"></li> 
-                <li class="about-tasks-item"><img src="./images/box-2.jpg" alt="creating products" width="370" height="294"></li>
-                <li class="about-tasks-item"><img src="./images/box-3.jpg" alt="creating products" width="370" height="294"></li>
+                <li class="about-tasks-item">
+                    <img src="./images/box-1.jpg" alt="creating products" width="370" height="294">
+                    <h3 class="about-tasks-products">Десктопные приложения</h3>
+                </li> 
+                <li class="about-tasks-item">
+                    <img src="./images/box-2.jpg" alt="creating products" width="370" height="294">
+                    <h3 class="about-tasks-products">Мобильные приложения</h3>
+                </li>
+                <li class="about-tasks-item">
+                    <img src="./images/box-3.jpg" alt="creating products" width="370" height="294">
+                    <h3 class="about-tasks-products">Дизайнерские решения</h3>
+                </li>
             </ul>
             </div>
         </section>
+
         <section class="section about-team">
             <div class="container">
             <h2 class="title">Наша команда</h2>
@@ -247,6 +271,7 @@
             </ul>
             </div>
         </section>
+
         <section class="section clients">
             <div class="container">
                 <h2 class="title">Постоянные клиенты</h2>
@@ -278,7 +303,9 @@
                 </ul>
             </div>
         </section>
+
     </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-container">
@@ -334,5 +361,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
+    
 </body>
 </html>
